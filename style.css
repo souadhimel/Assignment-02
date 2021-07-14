@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  margin-top: 50px;
+}
+.container {
+  max-width: 90%;
+  width: 1100px;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 5px;
+  background-color: deeppink;
+  color: white;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.btn:hover {
+  border: 1px solid deeppink;
+  background-color: transparent;
+  color: deeppink;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* ---------------------- */
+
+/* Header starts */
+.nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+header {
+  background: rgb(9 9 182 / 87%);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 20px;
+}
+
+.part-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.kick {
+  flex: 1;
+}
+
+/* Header ends */
+
+/* ---------------------------------
+------------------------------------ */
+
+/*------------- main starts------------ */
+.boot {
+  margin-top: 80px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: whitesmoke;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.text {
+  padding: 10px;
+}
+.highlights,
+.ranking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+table {
+  width: 100%;
+}
+.number {
+  text-align: center;
+}
+td {
+  width: 25%;
+}
+.partner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.globe {
+  text-align: center;
+  margin: 20px;
+}
+
+/* ----------Main ends----------- */
+
+/* -------------------------------------
+----------------------------------------- */
+
+/* footer starts */
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+footer img {
+  width: 30%;
+}
+i {
+  margin: 10px;
+}
+/* footer ends */
+
+/* ----------------------
+     Media Queries
+------------------------*/
+@media (max-width: 768px) {
+  .highlights,
+  .ranking,
+  .part-2 {
+    grid-template-columns: 1fr;
+  }
+  .partner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .part-2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 578px) {
+  footer img {
+    width: 50%;
+  }
+}
