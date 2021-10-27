@@ -72,6 +72,7 @@ a {
 /*------------- main starts------------ */
 .boot {
   margin-top: 80px;
+  background-color: rgb(189, 219, 219);
 }
 
 .players {
